@@ -58,6 +58,18 @@ h1 {
     margin-left: 2.5em;
     box-shadow: 1em 1em;
 }
+/* background image */
+html {
+    height: 100vh;
+}
+body {
+    min-height: 100vh;
+    background-image: url("../assets/images/hero.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* end background image */
 @media only screen and (max-width: 800px) {
     .card-img {
         display: block;
@@ -68,4 +80,6 @@ h1 {
     .card-body {
         margin: 2.5em;
     }
+
   }
+/* end card styling */
