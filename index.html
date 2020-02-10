@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
+    <meta http-equiv="refresh" content="5">
+    <title>About</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
@@ -12,8 +13,9 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
+        <div class="row header">
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
                 <h1>Timothy Mickiewicz</h1>
             </div>
             <div class="col-md-4">
@@ -24,7 +26,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link active" href="index.html">Homepage <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link active" href="index.html">About <span class="sr-only">(current)</span></a>
                             <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
                             <a class="nav-item nav-link" href="contact.html">Contact</a>
                             <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
@@ -32,6 +34,26 @@
                     </div>
                 </nav>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-7">
+                <div class="card mb-3" style="max-width: 700px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 imgbox">
+                            <img src="assets/images/About.JPG" class="card-img rotateimg90" alt="A picture of myself, Timothy Mickiewicz">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">About Me</h5>
+                                <p class="card-text">An aspiring full-stack web devloper with a background in analytical chemistry! Currently trained with the MERN stack along with other tech such as bootstrap.</p>
+                                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
