@@ -21,7 +21,6 @@ h1 {
 .container {
     font-family: "Russo One", sans-serif;
 }
-
 /* about card styling */
 .card {
     padding: 2em;
@@ -46,6 +45,7 @@ h1 {
     margin: auto;
     padding: 0em;
 }
+/* taken from https://stackoverflow.com/questions/13674086/rotate-image-with-css */
 .rotateimg90 {
     -webkit-transform:rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -95,6 +95,7 @@ form {
     border-width: 0.5em;
     margin: 1em;
     background-color: darkgrey;
+    padding: 0.5em;
 }
 label {
     margin-left: 0.25em;
@@ -104,6 +105,7 @@ label {
     padding: 0.25em;
     border: solid black;
 }
+/* button styling */
 .btn-primary {
     color: black;
     background-color: chartreuse;
@@ -128,3 +130,7 @@ label {
 .button-holder {
     text-align: right;
 }
+/* end button styling */
+/* end contact form styling */
+
+/* begin portfolio styling */
