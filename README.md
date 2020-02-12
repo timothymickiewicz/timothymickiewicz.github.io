@@ -4,13 +4,13 @@
 Timothy Mickiewicz
 
 ## Technologies Utilized
-HTML5
-CSS3
-Bootstrap
+HTML5 </br>
+CSS3 </br>
+Bootstrap </br>
 
 ## Requirements
-Working Navbar
-Scalable contents
+Working Navbar </br>
+Scalable contents </br>
 
 ## Licensing
 MIT
