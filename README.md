@@ -14,3 +14,7 @@ Scalable contents </br>
 
 ## Licensing
 MIT
+
+## Webpage Links
+timothymickiewicz.github.io </br>
+https://github.com/timothymickiewicz/timothymickiewicz.github.io
