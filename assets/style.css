@@ -21,6 +21,7 @@ h1 {
     font-size: 1.5em;
     font-weight: bolder;
 }
+/* font set for content */
 .container {
     font-family: "Russo One", sans-serif;
 }
@@ -151,4 +152,4 @@ label {
 /* end button styling */
 /* end contact form styling */
 
-/* begin portfolio styling */
+/* portfolio styling borrows from css set for about card */
