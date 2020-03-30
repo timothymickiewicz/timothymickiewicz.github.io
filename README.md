@@ -1,5 +1,5 @@
 # timothymickiewicz.github.io
-Live-Link: https://timothymickiewicz.github.io/ </br>
+Live-Link: https://timothymickiewicz.github.io/index.html </br>
 
 ## Contributor
 Timothy Mickiewicz </br>
