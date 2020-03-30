@@ -1,0 +1,57 @@
+body {
+    font-family: 'Russo One', sans-serif;
+}
+h1 {
+    text-align: center;
+    background-color: #f7f7f7;
+    color: black;
+    border-radius: 0.5vw;
+    margin-top: 4rem;
+}
+h5 {
+    font-size: 1.9rem;
+}
+form {
+    -webkit-box-shadow: 0vw 0vw 0.5vw 0.5vw black;
+    -moz-box-shadow:    0vw 0vw 0.5vw 0.5vw black;
+    box-shadow:         0vw 0vw 0.5vw 0.5vw black;
+    border: white 0.25vw solid;
+    border-radius: 0.5vw;
+    padding: 0.75vw;
+}
+hr {
+    height: 0.12vw;
+    background-color: white;
+}
+.card {
+    -webkit-box-shadow: 0vw 0vw 0.5vw 0.5vw black;
+    -moz-box-shadow:    0vw 0vw 0.5vw 0.5vw black;
+    box-shadow:         0vw 0vw 0.5vw 0.5vw black;
+    margin-top: 0.25vw;
+}
+.card-body {
+    text-align: center;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 500;
+    background: black;
+    width: 100%;
+    border-bottom: white 0.2vw solid;
+}
+.button-holder {
+    text-align: right;
+}
+.list-one {
+    padding-right: 0;
+}
+.list-two {
+    padding-left: 0;
+    padding-right: 0;
+}
+.list-three {
+    padding-left: 0;
+}
