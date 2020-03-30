@@ -74,4 +74,10 @@ hr {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .icon {
+        width: 20%;
+        height: 20%;
+        float: right;
+        overflow: hidden;
+    }
   }
