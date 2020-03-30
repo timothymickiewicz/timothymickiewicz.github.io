@@ -1,20 +1,14 @@
 # timothymickiewicz.github.io
+Live-Link: https://timothymickiewicz.github.io/ </br>
 
-## Creator
-Timothy Mickiewicz
+## Contributor
+Timothy Mickiewicz </br>
 
-## Technologies Utilized
+## Technologies
 HTML5 </br>
 CSS3 </br>
 Bootstrap </br>
-
-## Requirements
-Working Navbar </br>
-Scalable contents </br>
+Bootswatch </br>
 
 ## Licensing
-MIT
-
-## Webpage Links
-timothymickiewicz.github.io </br>
-https://github.com/timothymickiewicz/timothymickiewicz.github.io
+MIT </br>
