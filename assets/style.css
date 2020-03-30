@@ -55,3 +55,23 @@ hr {
 .list-three {
     padding-left: 0;
 }
+.icon {
+    width: 2rem;
+    height: 2rem;
+    float: right;
+    overflow: hidden;
+}
+@media only screen and (max-width: 769px) {
+    .list-one {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .list-two {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .list-three {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+  }
