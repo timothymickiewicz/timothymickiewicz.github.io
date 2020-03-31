@@ -157,8 +157,8 @@ p {
     }
     .card-image {
         width: auto;
-        height: 15rem;
-        max-height: 15rem;
+        height: 11rem;
+        max-height: 11rem;
     }
     .carousel-card {
         height: 30rem;
