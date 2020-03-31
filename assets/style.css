@@ -1,12 +1,19 @@
 body {
     font-family: 'Russo One', sans-serif;
+    color: #B8B8B8;
 }
 h1 {
     text-align: center;
     background-color: #f7f7f7;
     color: black;
     border-radius: 0.5vw;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     margin-top: 4rem;
+    margin-bottom: 0;
+    -webkit-box-shadow: 0vw 0vw 0.5vw 0.5vw black;
+    -moz-box-shadow:    0vw 0vw 0.5vw 0.5vw black;
+    box-shadow:         0vw 0vw 0.5vw 0.5vw black;
 }
 h5 {
     font-size: 1.9rem;
@@ -18,19 +25,40 @@ form {
     border: white 0.25vw solid;
     border-radius: 0.5vw;
     padding: 0.75vw;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
 }
 hr {
     height: 0.12vw;
     background-color: white;
 }
+p {
+    margin-bottom: 0.5rem;
+}
+.aboutImg {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 .card {
     -webkit-box-shadow: 0vw 0vw 0.5vw 0.5vw black;
     -moz-box-shadow:    0vw 0vw 0.5vw 0.5vw black;
     box-shadow:         0vw 0vw 0.5vw 0.5vw black;
-    margin-top: 0.25vw;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 .card-body {
     text-align: center;
+}
+.card-image {
+    width: auto;
+    height: 25rem;
+    max-height: 25rem;
+}
+.card-text {
+    margin-bottom: 1rem !important;
+}
+.carousel-card {
+    height: 20rem;
 }
 .nav {
     position: fixed;
@@ -55,6 +83,23 @@ hr {
 .list-three {
     padding-left: 0;
 }
+.two:nth-child(1), .two:nth-child(5) {
+    border-radius: 0;
+}
+.one:nth-child(1) {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.one:nth-child(5) {
+    border-bottom-right-radius: 0;
+}
+.three:nth-child(1) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.three:nth-child(5) {
+    border-bottom-left-radius: 0;
+}
 .icon {
     width: 2rem;
     height: 2rem;
@@ -63,6 +108,24 @@ hr {
 }
 .info {
     margin: 0;
+}
+#githubIcon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0.5rem;
+}
+#linkedInIcon {
+    display: inline-block;
+    width: 3rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+}
+#githubIconHidden {
+    display: none;
+}
+#linkedInIconHidden {
+    display: none;
 }
 @media only screen and (max-width: 769px) {
     .list-one {
@@ -82,5 +145,40 @@ hr {
         height: 20%;
         float: right;
         overflow: hidden;
+    }
+    .one:nth-child(5) {
+        border-bottom-left-radius: 0;
+    }
+    .three:nth-child(1) {
+        border-top-right-radius: 0;
+    }
+    .three:nth-child(5) {
+        border-bottom-left-radius: 0.25rem;;
+    }
+    .card-image {
+        width: auto;
+        height: 15rem;
+        max-height: 15rem;
+    }
+    .carousel-card {
+        height: 30rem;
+    }
+    #githubIcon {
+        display: none;
+    }
+    #linkedInIcon {
+        display: none;
+    }
+    #githubIconHidden {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0.75rem;
+    }
+    #linkedInIconHidden {
+        display: inline-block;
+        width: 3rem;
+        height: 2.5rem;
+        margin-left: 0.75rem;
     }
   }
