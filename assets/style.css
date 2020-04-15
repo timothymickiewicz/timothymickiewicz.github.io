@@ -45,6 +45,7 @@ p {
     box-shadow:         0vw 0vw 0.5vw 0.5vw black;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    margin-bottom: 3rem !important;
 }
 .card-body {
     text-align: center;
@@ -56,9 +57,6 @@ p {
 }
 .card-text {
     margin-bottom: 1rem !important;
-}
-.carousel-card {
-    height: 20rem;
 }
 .nav {
     position: fixed;
@@ -159,9 +157,6 @@ p {
         width: auto;
         height: 11rem;
         max-height: 11rem;
-    }
-    .carousel-card {
-        height: 30rem;
     }
     #githubIcon {
         display: none;
