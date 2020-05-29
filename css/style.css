@@ -17,6 +17,14 @@ html, body {
     border-right: whitesmoke solid 0.25rem;
     margin-right: 0.75rem;
 }
+#linkedin {
+    float: left;
+    vertical-align: middle;
+}
+#github-icon {
+    float: right;
+    vertical-align: middle;
+}
 #footer {
     font-size: 0.75rem;
     text-align: center;
@@ -42,7 +50,7 @@ html, body {
     display: inline-block;
     flex: auto;
     width: 45%;
-    font-size: 0.3rem;
+    font-size: 0.75rem;
     height: 2.5rem;
 }
 #project-title {
@@ -176,4 +184,8 @@ html, body {
 }
 .navbar-dark .navbar-brand {
     color: #20C20E;
+}
+.navbar-brand {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
 }
