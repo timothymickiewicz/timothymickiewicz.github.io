@@ -1,14 +1,2 @@
-# timothymickiewicz.github.io
-Live-Link: https://timothymickiewicz.github.io/index.html </br>
-
-## Contributor
-Timothy Mickiewicz </br>
-
-## Technologies
-HTML5 </br>
-CSS3 </br>
-Bootstrap </br>
-Bootswatch </br>
-
-## Licensing
-MIT </br>
+# Portfolio
+Hello! My name is Timothy Mickiewicz and I am a MERN developer currently seeking employment. Check out my portfolio at [timothymickiewicz.github.io](timothymickiewicz.github.io).
