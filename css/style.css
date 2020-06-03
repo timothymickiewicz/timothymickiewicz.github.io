@@ -209,6 +209,7 @@ html, body {
     .navbar {
         max-width: 100%;
         padding: 0.2rem;
+        position: sticky;
     }
     .navbar-brand {
         max-width: 100%!important;
