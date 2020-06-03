@@ -113,6 +113,7 @@ $( document ).ready(function() {
     checkInfo();
     
     $(".carousel-control-next").click(function() {
+        // Corrects the potential of the carousel running slower than the click events, offsetting text from project image
         $(".carousel-control-prev").css("display", "none");
         $(".carousel-control-next").css("display", "none");
         setTimeout(function() {
@@ -123,6 +124,7 @@ $( document ).ready(function() {
         checkInfo();
     });
     $(".carousel-control-prev").click(function() {
+        // Corrects the potential of the carousel running slower than the click events, offsetting text from project image
         $(".carousel-control-prev").css("display", "none");
         $(".carousel-control-next").css("display", "none");
         setTimeout(function() {

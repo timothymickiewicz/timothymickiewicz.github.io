@@ -6,7 +6,7 @@ html, body {
 #about {
     font-family: 'Press Start 2P', cursive;
     background-color: #343a40;
-    color: #20C20E;
+    color: #26EA10;
     border: none;
     width: 98%;
     margin-left: 1rem;
@@ -40,9 +40,9 @@ html, body {
 }
 #github-jumbo, #live {
     background-color: #222529;
-    color: #20C20E;
+    color: #26EA10;
     font-family: 'Press Start 2P', cursive;
-    border: solid #20C20E 0.1rem;
+    border: solid #26EA10 0.1rem;
     border-radius: 0;
     position: relative;
     bottom: -60vh;
@@ -83,7 +83,7 @@ html, body {
 .list-group-item {
     height: 18.5%;
     background-color: #343a40;
-    color: #20C20E;
+    color: #26EA10;
     font-family: 'Press Start 2P', cursive;
 }
 .icon {
@@ -115,9 +115,9 @@ html, body {
     flex: 0!important
 }
 .carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 3rem;
-    height: 3rem;
-    background-color: #20C20E;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: #26EA10;
     border: #343a40 solid 0.5rem;
     border-radius: 100%;
 }
@@ -142,7 +142,7 @@ html, body {
     height: 86vh;
     border-radius: 0;
     background-color: #343a40;
-    color: #20C20E;
+    color: #26EA10;
     font-family: 'Press Start 2P', cursive;
 }
 .container, .main {
@@ -172,18 +172,18 @@ html, body {
     position: fixed;
     bottom: 0;
     background-color: #343a40;
-    color: #20C20E;
+    color: #26EA10;
     min-width: 100vw;
     padding: 0.25rem;
     z-index: 100;
 }
 .nav-link {
-    color: #20C20E!important;
-    border: solid #20C20E 0.1rem;
+    color: #26EA10!important;
+    border: solid #26EA10 0.1rem;
     background-color: #222529;
 }
 .navbar-dark .navbar-brand {
-    color: #20C20E;
+    color: #26EA10;
 }
 .navbar-brand {
     margin-right: 0.5rem;
