@@ -264,9 +264,12 @@ html, body {
     }
     #title {
         border: none;
+        margin: 0!important;
+        padding: 0!important;
     }
     #wrap-header {
-        max-width: 100%;
+        min-width: 100%;
+        text-align: center;
     }
 }
 
