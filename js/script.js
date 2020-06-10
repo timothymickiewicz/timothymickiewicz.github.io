@@ -10,14 +10,14 @@ var info = {
     },
     space: {
         projectTitle: "Space",
-        description: "An team developed educational application to show users a range of information about the planets in our solar system. Planets can be compared side by side as well as by themselves.",
+        description: "A team developed educational application to show users a range of information about the planets in our solar system. Planets can be compared side by side as well as by themselves.",
         technologies: "HTML5, CSS3, JavaScript, jQuery, Materialize, SymanticUI, Moment.js, AJAX",
         githubJumbo: "https://github.com/timothymickiewicz/space",
         live: "https://ryanhun7er.github.io/space/"
     },
     weatherdashboard: {
         projectTitle: "WeatherDashboard",
-        description: "A solo developed application to show the current weather of a city of the user's choice, as well as a 5 day forecast",
+        description: "A solo developed full stack application to show the current weather of a city of the user's choice, as well as a 5 day forecast",
         technologies: "HTML5, CSS3, JavaScript, jQuery, Node.js, Moment.js, AJAX",
         githubJumbo: "https://github.com/timothymickiewicz/WeatherDashboard",
         live: "https://timothymickiewicz.github.io/WeatherDashboard/"
@@ -29,12 +29,12 @@ var info = {
         githubJumbo: "https://github.com/timothymickiewicz/BranchManager",
         live: ""
     },
-    easymd: {
-        projectTitle: "EasyMD",
-        description: "A solo developed command line application to generate an easy README markdown file for your project. The user is presented with a range of questions that fill in the template as they complete the procedure.",
-        technologies: "JavaScript, Node.js, Axios, Inquirer, File System",
-        githubJumbo: "https://github.com/timothymickiewicz/EasyMD",
-        live: ""
+    fittofailure: {
+        projectTitle: "FitToFailure",
+        description: "A solo developed full-stack application that keeps track of the user's workouts throughout the week. The last workout started can be added onto and everything is displaying on the dashboard for easy viewing!",
+        technologies: "HTML5, CSS3, JavaScript, Node.js, MongoDB, Mongoose, Heroku, Express.js, EsLint, Moment.js, Path.js",
+        githubJumbo: "https://github.com/timothymickiewicz/FitToFailure",
+        live: "https://fast-stream-10384.herokuapp.com/"
     },
     workday: {
         projectTitle: "WorkDay",
@@ -66,21 +66,21 @@ function checkInfo() {
             $("#description").text(info.dineordash.description);
             $("#technologies").text(info.dineordash.technologies);
             $("#github-jumbo").attr("href", info.dineordash.githubJumbo);
-            $("#live").attr("href", info.dineordash.live).removeClass("disabled").css("color", "#20C20E").html("See Live");
+            $("#live").attr("href", info.dineordash.live).attr("target", "_blank").removeClass("disabled").css("color", "#20C20E").html("See Live");
           break;
         case 1:
             $("#project-title").text(info.space.projectTitle);
             $("#description").text(info.space.description);
             $("#technologies").text(info.space.technologies);
             $("#github-jumbo").attr("href", info.space.githubJumbo);
-            $("#live").attr("href", info.space.live).removeClass("disabled").css("color", "#20C20E").html("See Live");
+            $("#live").attr("href", info.space.live).attr("target", "_blank").removeClass("disabled").css("color", "#20C20E").html("See Live");
           break;
         case 2:
             $("#project-title").text(info.weatherdashboard.projectTitle);
             $("#description").text(info.weatherdashboard.description);
             $("#technologies").text(info.weatherdashboard.technologies);
             $("#github-jumbo").attr("href", info.weatherdashboard.githubJumbo);
-            $("#live").attr("href", info.weatherdashboard.live).removeClass("disabled").css("color", "#20C20E").html("See Live");
+            $("#live").attr("href", info.weatherdashboard.live).attr("target", "_blank").removeClass("disabled").css("color", "#20C20E").html("See Live");
             break;
         case 3:
             $("#project-title").text(info.branchmanager.projectTitle);
@@ -90,18 +90,18 @@ function checkInfo() {
             $("#live").addClass("disabled").css("color", "red").html("CLI only").attr("href", "");
             break;
         case 4:
-            $("#project-title").text(info.easymd.projectTitle);
-            $("#description").text(info.easymd.description);
-            $("#technologies").text(info.easymd.technologies);
-            $("#github-jumbo").attr("href", info.easymd.githubJumbo);
-            $("#live").addClass("disabled").css("color", "red").html("CLI only").attr("href", "");
+            $("#project-title").text(info.fittofailure.projectTitle);
+            $("#description").text(info.fittofailure.description);
+            $("#technologies").text(info.fittofailure.technologies);
+            $("#github-jumbo").attr("href", info.fittofailure.githubJumbo);
+            $("#live").attr("href", info.fittofailure.live).attr("target", "_blank").removeClass("disabled").css("color", "#20C20E").html("See Live");
             break;
         case 5:
             $("#project-title").text(info.workday.projectTitle);
             $("#description").text(info.workday.description);
             $("#technologies").text(info.workday.technologies);
             $("#github-jumbo").attr("href", info.workday.githubJumbo);
-            $("#live").attr("href", info.workday.live).removeClass("disabled").css("color", "#20C20E").html("See Live");
+            $("#live").attr("href", info.workday.live).attr("target", "_blank").removeClass("disabled").css("color", "#20C20E").html("See Live");
             break;
         default:
           break;
