@@ -182,6 +182,9 @@ html, body {
     border: solid #26EA10 0.1rem;
     background-color: #222529;
 }
+.navbar-collapse {
+    justify-content: center;
+}
 .navbar-dark .navbar-brand {
     color: #26EA10;
 }
