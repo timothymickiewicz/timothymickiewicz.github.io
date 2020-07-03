@@ -1,0 +1,4 @@
+.content, .main {
+    min-height: 100%;
+    overflow: auto
+}
