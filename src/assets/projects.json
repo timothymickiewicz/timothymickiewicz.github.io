@@ -1,0 +1,44 @@
+{
+   "dine-or-dash": {
+       "title": "Dine-or-Dash",
+       "text": "A team developed application that lets the user browse restaurants based on their location or by entering a city. Restaurants can be liked or disliked as they come up. Liked restaurants will display on the `liked` page with more restaurant information and can be favorited or removed. `Favorited` restaurants are kept on the favorites page. Users must create an account and log in to use the application.",
+       "src": "/assets/images/dineordash.png",
+       "mouse-over": "`/assets/gifs/dineordash-min.gif`",
+       "mouse-leave": "`/assets/images/dineordash.png`"
+    },
+    "fit-to-failure": {
+        "title": "Fit To Failure",
+        "text": "A solo developed full-stack application that keeps track of the user's workouts throughout the week. The last workout started can be added onto and everything is displaying on the dashboard for easy viewing!",
+        "src": "/assets/images/fittofailure.png",
+        "mouse-over": "/assets/gifs/fittofailure-min.gif",
+        "mouse-leave": "/assets/images/fittofailure.png"
+    },
+    "quick-notes": {
+        "title": "Quick Notes",
+        "text": "A solo developed full stack application that allows a user to create notes. Notes are saved in a database and the user can revisit past notes by clicking on the note's headers on the sidebar.",
+        "src": "/assets/images/quicknotes.png",
+        "mouse-over": "/assets/gifs/quicknotes-min.gif",
+        "mouse-leave": "/assets/images/quicknotes.png"
+    },
+    "manpower": {
+        "title": "Manpower",
+        "text": "A solo developed full stack application that uses React to dynamically display employee information. The results can be filtered as you type into the search bar, or sorted alphabetically/numerically.",
+        "src": "/assets/images/manpower.png",
+        "mouse-over": "/assets/gifs/manpower-min.gif",
+        "mouse-leave": "/assets/images/manpower.png"
+    },
+    "branch-manager": {
+        "title": "Branch Manager",
+        "text": "A solo Node.js CLI application to generate team member information for your company. You are able to create a team consisting of a manager/managers, engineers, and interns with information such as: email addresses, employee IDs, names, github accounts, schools, and office numbers. The result is compiled into an HTML page to be viewed.",
+        "src": "/assets/images/branchmanager.png",
+        "mouse-over": "/assets/gifs/branchmanager-min.gif",
+        "mouse-leave": "/assets/images/branchmanager.png"
+    },
+    "weather-dashboard": {
+        "title": "Weather Dashboard",
+        "text": "A solo developed full stack application to show the current weather of a city of the user's choice, as well as a 5 day forecast. The last entered location will be displayed first when the page loads.",
+        "src": "/assets/images/weatherdashboard.png",
+        "mouse-over": "/assets/gifs/weatherdashboard-min.gif",
+        "mouse-leave": "/assets/images/weatherdashboard.png"
+    }
+}
