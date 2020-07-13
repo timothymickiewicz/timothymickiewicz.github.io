@@ -1,6 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import {Router} from "react-router";
 import Card from 'react-bootstrap/Card'
 import "../../style/projects.css"
 var info = require('../../assets/projects.json');
