@@ -1,5 +1,0 @@
-{
-    "languages": ["HTML5", "CSS3", "JavaScript/Node.js", "MySQL", "MongoDB"],
-     "libraries": ["React", "Bootstrap", "jQuery", "Sequelize", "Mongoose"],
-     "extras": ["Google API Library", "Geolocation", "User Authentication", "Bcrypt", "Dynamic Rendering"]
- }

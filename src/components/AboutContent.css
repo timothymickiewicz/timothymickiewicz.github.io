@@ -1,0 +1,16 @@
+hr {
+    border: none;
+    height: 40px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+.container {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.tx {               
+    margin: 0   
+}
