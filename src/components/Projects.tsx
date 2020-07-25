@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
         <IonContent>
             <IonGrid>
                 <IonRow>
-                    <IonCol size-sm="12" size-md="4">
+                    <IonCol size-xs="12" size-lg="6" size-xl="4">
                         <IonCard style={{"background": "#dee1e1"}}>
                             <img src={dayr8} alt="dayr8 screenshot" />
                             <IonCardHeader>
@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
                             </IonCardContent>
                         </IonCard>
                     </IonCol>
-                    <IonCol size-sm="12" size-md="4">
+                    <IonCol size-xs="12" size-lg="6" size-xl="4">
                         <IonCard style={{"background": "#dee1e1"}}>
                             <img src={dineordash} alt="dineordash screenshot" />
                             <IonCardHeader>
@@ -64,7 +64,7 @@ const Projects: React.FC = () => {
                             </IonCardContent>
                         </IonCard>
                     </IonCol>
-                    <IonCol size-sm="12" size-md="4">
+                    <IonCol size-xs="12" size-lg="6" size-xl="4">
                         <IonCard style={{"background": "#dee1e1"}}>
                             <img src={manpower} alt="manpower screenshot" />
                             <IonCardHeader>
@@ -89,11 +89,7 @@ const Projects: React.FC = () => {
                             </IonCardContent>
                         </IonCard>
                     </IonCol>
-                </IonRow>
-            </IonGrid>
-            <IonGrid>
-                <IonRow>
-                    <IonCol size-sm="12" size-md="4">
+                    <IonCol size-xs="12" size-lg="6" size-xl="4">
                         <IonCard style={{"background": "#dee1e1"}}>
                             <img src={weatherdashboard} alt="weatherdashboard screenshot" />
                             <IonCardHeader>
@@ -118,7 +114,7 @@ const Projects: React.FC = () => {
                             </IonCardContent>
                         </IonCard>
                     </IonCol>
-                    <IonCol size-sm="12" size-md="4">
+                    <IonCol size-xs="12" size-lg="6" size-xl="4">
                         <IonCard style={{"background": "#dee1e1"}}>
                             <img src={branchmanager} alt="branchmanager screenshot" />
                             <IonCardHeader>
@@ -143,7 +139,7 @@ const Projects: React.FC = () => {
                             </IonCardContent>
                         </IonCard>
                     </IonCol>
-                    <IonCol size-sm="12" size-md="4">
+                    <IonCol size-xs="12" size-lg="6" size-xl="4">
                         <IonCard style={{"background": "#dee1e1"}}>
                             <img src={fittofailure} alt="fittofailure screenshot" />
                             <IonCardHeader>
