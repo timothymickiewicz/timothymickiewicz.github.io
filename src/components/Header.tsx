@@ -1,19 +1,30 @@
 import React from 'react';
 import './AboutContent.css';
-import { IonHeader, IonToolbar, IonAvatar, IonTitle } from '@ionic/react';
+import { IonAvatar } from '@ionic/react';
 import LinksBtn from './LinksBtn'
 import Img from '../assets/images/portfolio.png'
+import './Header.css';
 
-const AboutContent: React.FC = () => (
-    <IonHeader>
-        <IonToolbar style={{"textAlign": "center"}}>
-            <IonAvatar style={{"float": "left", "margin": "3px", "background": "transparent", "position": "absolute"}}>
-            <img alt="me" src={Img} />
+const Header: React.FC = () => {
+    const [avatarClass, setAvatarClass] = React.useState("avatarSm");
+
+    React.useEffect(() => {
+        console.log(avatarClass)
+    }, [avatarClass]);
+
+    const handleAvatarClick = () => {
+        let avatarClassSet = avatarClass === "avatarSm" ? "avatarLg" : "avatarSm"
+        setAvatarClass(avatarClassSet)
+    }
+
+    return (
+        <div className="transparent">
+            <IonAvatar class={avatarClass} onClick={handleAvatarClick}>
+                <img alt="me" src={Img} />
             </IonAvatar>
-        <IonTitle style={{'lineHeight': "70px", "fontSize": "20px"}}>Timothy Mickiewicz</IonTitle>
-        </IonToolbar>
-        <LinksBtn/>
-    </IonHeader>
-);
+            <LinksBtn/>
+        </div>
+    )
+};
 
-export default AboutContent;
+export default Header;

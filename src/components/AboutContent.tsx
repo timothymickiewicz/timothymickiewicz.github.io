@@ -1,12 +1,11 @@
 import React from 'react';
 import './AboutContent.css';
-import { IonText } from '@ionic/react';
 
 const AboutContent: React.FC = () => (
     <div className="container" color="primary">
-        <h2 className="tx">Greetings! My name is Timothy Mickiewicz. 
+        <h2 className="tx">Hi! My name is Timothy Mickiewicz.
         <hr></hr> 
-        Full Stack Developer, Molecular Biologist & Perpetual Student</h2>
+        <span style={{"color": "#1C1C1C", "fontFamily": "'Rowdies', cursive"}}>Full Stack Developer</span>, <span style={{"color": "#dee1e1", "fontFamily": "'Rowdies', cursive"}}>Molecular Biologist</span>, <span style={{"color": "#1C1C1C", "fontFamily": "'Rowdies', cursive"}}>Perpetual Student</span></h2>
     </div>
 );
 

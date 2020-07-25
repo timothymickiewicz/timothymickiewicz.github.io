@@ -44,16 +44,16 @@ const App: React.FC = () => (
           <Route path="/tab3" component={Tab3} />
           <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
         </IonRouterOutlet>
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
+        <IonTabBar slot="bottom" style={{"backgroundColor": "#dee1e1"}}>
+          <IonTabButton style={{"backgroundColor": "#dee1e1"}} tab="tab1" href="/tab1">
             <IonIcon icon={personCircleSharp} />
             <IonLabel>About</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton style={{"backgroundColor": "#dee1e1"}} tab="tab2" href="/tab2">
             <IonIcon icon={bulbOutline} />
             <IonLabel>Projects</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton style={{"backgroundColor": "#dee1e1"}} tab="tab3" href="/tab3">
             <IonIcon icon={bodyOutline} />
             <IonLabel>Skills</IonLabel>
           </IonTabButton>

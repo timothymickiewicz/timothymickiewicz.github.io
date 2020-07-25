@@ -1,22 +1,13 @@
 import React from 'react';
-import { IonContent, IonAvatar, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab2.css';
-import LinksBtn from '../components/LinksBtn'
-import Img from '../assets/images/portfolio.png'
+import Header from '../components/Header'
 
 const Tab2: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar style={{"textAlign": "center"}}>
-            <IonAvatar style={{"float": "left", "margin": "3px", "background": "transparent", "position": "absolute"}}>
-              <img alt="me" src={Img} />
-            </IonAvatar>
-          <IonTitle style={{'lineHeight': "70px", "fontSize": "20px"}}>Timothy Mickiewicz</IonTitle>
-        </IonToolbar>
-        <LinksBtn/>
-      </IonHeader>
+      <Header />
       <IonContent>
         <IonHeader collapse="condense">
           <IonToolbar>
