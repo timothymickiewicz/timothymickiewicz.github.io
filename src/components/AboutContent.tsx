@@ -4,21 +4,10 @@ import Img from '../assets/images/portfolio.png'
 import { IonAvatar } from '@ionic/react';
 
 const AboutContent: React.FC = () => {
-    const [avatarClass, setAvatarClass] = React.useState("avatarSm");
-
-    React.useEffect(() => {
-        console.log(avatarClass)
-    }, [avatarClass]);
-
-    const handleAvatarClick = () => {
-        let avatarClassSet = avatarClass === "avatarSm" ? "avatarLg" : "avatarSm"
-        setAvatarClass(avatarClassSet)
-    }
-
     return (
         <div>
             <div className="containerAv">
-                <IonAvatar className="av" class={avatarClass} style={{"cursor": "pointer"}} onClick={handleAvatarClick} >
+                <IonAvatar className="av" class="avatarSm" >
                     <img alt="me" src={Img} />
                 </IonAvatar>
             </div>
