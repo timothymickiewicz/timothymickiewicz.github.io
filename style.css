@@ -30,10 +30,25 @@ hr {
     text-shadow: 0 0 0.25vw #89cff0;
 }
 
+#intro {
+    margin-bottom: 2vh;
+}
+
 #linksWrap {
     display: flex;
     justify-content: space-between;
     order: -1;
+}
+
+#linkedinIcon {
+    width: 55%;
+    height: auto;
+}
+
+#githubIcon {
+    width: 35%;
+    margin: 9.0%;
+    height: auto;
 }
 
 #portfolioImage {
@@ -87,11 +102,19 @@ hr {
 .projectGitHub {
     float: left;
     align-self: flex-start;
+    font-size: calc(15px + 0.5vw);
+    border: solid 1.5px blue;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .projectLive {
     float: right;
     align-self: flex-end;
+    font-size: calc(15px + 0.5vw);
+    border: solid 1.5px blue;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .projectText {
