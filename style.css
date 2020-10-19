@@ -1,0 +1,105 @@
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+html, body, #main {
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    overflow-x: hidden;
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+
+hr {
+    color: white;
+    box-shadow: 0 0 0.5vw #89cff0;
+    width: 85%;
+}
+
+#portfolioImage {
+    max-height: 30vh;
+    width: auto;
+    max-width: 100%;
+    border-radius: 100%;
+    box-shadow: 0 0 0.75vw white;
+}
+
+#projectsField {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contentHeader {
+    color: white;
+    font-size: calc(15px + 3vw);
+    text-shadow: 0 0 0.75vw #89cff0;
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.header {
+    color: white;
+    font-size: calc(15px + 4vw);
+    text-shadow: 0 0 0.75vw #89cff0;
+}
+
+.project {
+    border: solid #89cff0 2px;
+    border-radius: 10px;
+    flex: 0 1 calc(50% - 1em);
+    padding: 16px;
+    margin: 1vh;
+}
+
+.projectTitle {
+    color: #89cff0;
+    font-size: calc(15px + 2vw);
+}
+
+.projectGitHub {
+    float: left;
+}
+
+.projectLive {
+    float: right;
+}
+
+.projectText {
+    color: white;
+    font-size: calc(15px + 0.75vw);
+}
+
+.projectImages {
+    max-height: 30vh;
+    width: auto;
+    max-width: 100%;
+    align-self: center;
+}
+
+.row {
+    max-width: 100vw;
+    text-align: center;
+    height: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 600px) {
+    .project {
+        flex: 0 1 calc(100% - 1em);
+    }
+}
