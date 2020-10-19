@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import {
   IonApp,
   IonIcon,
@@ -8,7 +8,8 @@ import {
   IonTabBar,
   IonTabButton,
   IonTabs,
-  useIonViewWillEnter
+  useIonViewWillEnter,
+  IonRedirect
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { bodyOutline, bulbOutline, personCircleSharp } from 'ionicons/icons';
@@ -43,7 +44,7 @@ const App: React.FC = () => (
           <Route path="/tab1" component={Tab1} />
           <Route path="/tab2" component={Tab2} />
           <Route path="/tab3" component={Tab3} />
-          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+          <Redirect exact from="/" to="/tab1" />
         </IonRouterOutlet>
         <IonTabBar slot="bottom" style={{"backgroundColor": "#dee1e1"}}>
           <IonTabButton style={{"backgroundColor": "#dee1e1"}} tab="tab1" href="/tab1">
