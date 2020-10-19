@@ -24,6 +24,18 @@ hr {
     width: 85%;
 }
 
+#about {
+    color: white;
+    font-size: calc(15px + 1.5vw);
+    text-shadow: 0 0 0.25vw #89cff0;
+}
+
+#linksWrap {
+    display: flex;
+    justify-content: space-between;
+    order: -1;
+}
+
 #portfolioImage {
     max-height: 30vh;
     width: auto;
@@ -44,7 +56,6 @@ hr {
     font-size: calc(15px + 3vw);
     text-shadow: 0 0 0.75vw #89cff0;
     text-align: center;
-    margin-top: 8vh;
 }
 
 .header {
@@ -55,31 +66,38 @@ hr {
 
 .project {
     border: solid #89cff0 2px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     border-radius: 10px;
-    flex: 0 1 calc(50% - 1em);
+    flex: 0 1 calc(33% - 1em);
     padding: 16px;
     margin: 1vh;
     background-color: #485461;
-    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    background-image: linear-gradient(315deg, rgba(255,255,255,.1) 0%, black 100%);
     box-shadow: 0.5vw 0.5vw 0.5vw black;
 }
 
 .projectTitle {
     color: #89cff0;
     font-size: calc(15px + 2vw);
+    order: -1;
 }
 
 .projectGitHub {
     float: left;
+    align-self: flex-start;
 }
 
 .projectLive {
     float: right;
+    align-self: flex-end;
 }
 
 .projectText {
     color: white;
     font-size: calc(15px + 0.75vw);
+    order: -1;
 }
 
 .projectImages {
@@ -88,6 +106,8 @@ hr {
     align-self: center;
     margin-top: 3vh;
     border-radius: 0 0 10px 10px;
+    vertical-align: bottom;
+    order: 1;
 }
 
 .row {

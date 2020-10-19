@@ -63,8 +63,10 @@ let renderProjects = () => {
             let currentProject = 
             `
             <div class="col-4 project"> 
-                <a href="${project.github}" class="projectGitHub">See Code</a>
+                <div id="linksWrap">
+                    <a href="${project.github}" class="projectGitHub">See Code</a>
                 <a href="${project.live}" class="projectLive">See Live</a>
+                </div>
                 <h1 class="projectTitle">${project.title}</h1>
                 <div class="projectText">${project.text}</div>
                 <img class="projectImages" src="${project.src}" />
