@@ -30,13 +30,13 @@ const projects =
      },
      {
          title: "Branch Manager",
-         text: "A solo Node.js CLI application to generate team member information for your company. You are able to create a team consisting of a manager/managers, engineers, and interns with information such as: email addresses, employee IDs, names, github accounts, schools, and office numbers. The result is compiled into an HTML page to be viewed in the browser.",
+         text: "A solo Node.js CLI application to generate team member information. You are able to create a team consisting of managers, engineers, and interns with information such as: emails, employee IDs, names, github accounts, schools, and office numbers. The result is compiled into an HTML page.",
          src: "./images/branchmanager.png",
          github: "https://github.com/timothymickiewicz/BranchManager"
      },
      {
          title: "Weather Dashboard",
-         text: "A solo developed full stack application to show the current weather of a city of the user's choice, as well as a 5 day forecast. The last entered location will be displayed first when the page loads.",
+         text: "A solo developed full stack application to show the current weather of a city of the user's choice, as well as a 5 day forecast. The last entered location will be displayed first when the page loads. Previous entered cities will be stored on the side as buttons for future reference.",
          src: "./images/weatherdashboard.png",
          github: "https://github.com/timothymickiewicz/WeatherDashboard",
          live: "https://timothymickiewicz.github.io/WeatherDashboard/"
