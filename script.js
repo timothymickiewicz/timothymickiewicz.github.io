@@ -44,12 +44,12 @@ const projects =
 ];
 
 const skills = 
-{
-    languages: ["HTML5", "CSS3", "JavaScript/Node", "MySQL", "MongoDB", "CoffeeScript"],
-    frameworks: ["React", "Handlebars", "Ionic", "Express"],
-    libraries: ["Passport", "Bootstrap", "jQuery", "Sequelize", "Mongoose", "Moment", "Morgan"],
-    extras: ["Google API Libraries", "Geolocation", "User Authentication", "Bcrypt Encryption", "Dynamic Rendering", "Responsive Design", "Database Design"]
- }
+[
+    {id: "languages", skills: ["HTML5", "CSS3", "JavaScript/Node", "MySQL", "MongoDB", "CoffeeScript"]},
+    {id: "frameworks", skills: ["React", "Handlebars", "Ionic", "Express"]},
+    {id: "libraries", skills: ["Passport", "Bootstrap", "jQuery", "Sequelize", "Mongoose", "Moment", "Morgan"]},
+    {id: "extras", skills: ["Google API Libraries", "Geolocation", "User Authentication", "Bcrypt Encryption", "Dynamic Rendering", "Responsive Design", "Database Design"]}
+]
 
 let setCols = () => {
     for (let i=1;i<12;i++) {
@@ -78,7 +78,25 @@ let renderProjects = () => {
     });
 }
 
+let renderSkills = () => {
+    skills.map(typeOfSkill => {
+        typeOfSkill.skills.map((skill, index) => {
+            let runTemplate = () => {
+                let currentSkill =
+                `
+                <div class="col-12">
+                    ${skill}
+                </div>
+                `;
+                $(currentSkill).appendTo(`#skillsField`);
+            }
+            runTemplate();
+        })
+    });
+}
+
 $( document ).ready(function() {
-    renderProjects(); // Renders projects first so that cols aren't set before projects are on the page
+    renderProjects();
+    renderSkills();
     setCols();
 });
