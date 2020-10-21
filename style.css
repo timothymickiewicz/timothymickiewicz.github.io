@@ -41,12 +41,12 @@ hr {
 }
 
 #linkedinIcon {
-    width: 55%;
+    width: calc(45% + 30px);
     height: auto;
 }
 
 #githubIcon {
-    width: 35%;
+    width: calc(25% + 30px);
     margin: 9.0%;
     height: auto;
 }
@@ -106,6 +106,7 @@ hr {
     border: solid 1.5px blue;
     border-radius: 10px;
     padding: 10px;
+    background-color: #89cff0;
 }
 
 .projectLive {
@@ -115,6 +116,7 @@ hr {
     border: solid 1.5px blue;
     border-radius: 10px;
     padding: 10px;
+    background-color: #89cff0;
 }
 
 .projectText {

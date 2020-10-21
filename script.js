@@ -74,19 +74,11 @@ let renderProjects = () => {
             `;
             $(currentProject).appendTo(`#projectsField`);
         }
-
-        if (index<3) {
-            runTemplate();
-        }
-
-        else if (index>=3) {
-            runTemplate();
-        }
-
+        runTemplate();
     });
 }
 
 $( document ).ready(function() {
-    renderProjects();
+    renderProjects(); // Renders projects first so that cols aren't set before projects are on the page
     setCols();
 });
