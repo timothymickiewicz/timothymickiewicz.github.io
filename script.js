@@ -51,6 +51,7 @@ const skills =
     {id: "extras", skills: ["Google API Libraries", "Geolocation", "User Authentication", "Bcrypt Encryption", "Dynamic Rendering", "Responsive Design", "Database Design"]}
 ]
 
+// Iterates each col size and adjusts accordingly
 let setCols = () => {
     for (let i=1;i<12;i++) {
         $(`.col-${i}`).css(`width`, `calc(100% * (${i}/12))`).css(`box-sizing`, `border-box`).css(`float`, `left`).css(`padding`, `1vw`);
@@ -62,15 +63,15 @@ let renderProjects = () => {
         let runTemplate = () => {
             let currentProject = 
             `
-            <div class="col-4 project"> 
-                <div id="linksWrap">
-                    <a href="${project.github}" class="projectGitHub">See Code</a>
-                <a href="${project.live}" class="projectLive">See Live</a>
+                <div class="col-4 project"> 
+                    <div id="linksWrap">
+                        <a href="${project.github}" class="projectGitHub">See Code</a>
+                    <a href="${project.live}" class="projectLive">See Live</a>
+                    </div>
+                    <h1 class="projectTitle">${project.title}</h1>
+                    <div class="projectText">${project.text}</div>
+                    <img class="projectImages" src="${project.src}" />
                 </div>
-                <h1 class="projectTitle">${project.title}</h1>
-                <div class="projectText">${project.text}</div>
-                <img class="projectImages" src="${project.src}" />
-            </div>
             `;
             $(currentProject).appendTo(`#projectsField`);
         }
@@ -80,15 +81,59 @@ let renderProjects = () => {
 
 let renderSkills = () => {
     skills.map(typeOfSkill => {
+        // Counts to be used in CSS calculations
+        let stackCount = rowCount = topCount = 0;
+
+        // Generates fields for each skill grouping
+        let generateSkillField = () => {
+            let skillField = 
+            `
+                <div class="col-12 skillCardGroupHeader">
+                    ${typeOfSkill.id[0].toUpperCase() + typeOfSkill.id.slice(1)}
+                </div>
+                <hr class="skillsHr">
+                <div class="col-12 skillTypeContainer${typeOfSkill.id}">
+                    <div class="col-12 skillCardGroup" id="${typeOfSkill.id+rowCount}" style="margin-top:${topCount}px">
+
+                    </div>
+                </div>
+            `
+            $(skillField).appendTo(`#skillsField`);
+        }
+        generateSkillField();
+        // Generates each skill card to be added into the above sections according to their group, adding new divs when current is full
         typeOfSkill.skills.map((skill, index) => {
             let runTemplate = () => {
-                let currentSkill =
-                `
-                <div class="col-12">
-                    ${skill}
-                </div>
-                `;
-                $(currentSkill).appendTo(`#skillsField`);
+                stackCount ++;
+                if (stackCount > 4) {
+                    stackCount = 1;
+                    rowCount ++;
+                    topCount += 30;
+                    let currentSkill =
+                    `
+                        <div class="col-12 skillCard" style="z-index:${(stackCount)};left:calc(${stackCount - 1} * 25%);top:calc(${rowCount + 1} * (2.5vh + 5px))">
+                            ${skill}
+                        </div>
+                    `;
+                    let newRow =
+                    `
+                        <div class="col-12 skillCardGroup" id="${typeOfSkill.id+rowCount}" style="margin-top:${topCount}px">
+        
+                        </div>
+                    `;
+                    $(newRow).appendTo(`.skillTypeContainer${typeOfSkill.id}`);
+                    $(`.skillTypeContainer${typeOfSkill.id}`).css("height", topCount);
+                    $(currentSkill).appendTo(`#${typeOfSkill.id+rowCount}`);
+                }
+                else {
+                    let currentSkill =
+                    `
+                        <div class="col-12 skillCard" style="z-index:${stackCount};left:calc(${(stackCount - 1)} * 25%);top:0">
+                            ${skill}
+                        </div>
+                    `;
+                    $(currentSkill).appendTo(`#${typeOfSkill.id+rowCount}`);
+                }
             }
             runTemplate();
         })
