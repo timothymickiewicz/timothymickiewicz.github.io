@@ -68,6 +68,7 @@ hr {
     font-size: calc(15px + 3vw);
     text-shadow: 0 0 0.75vw #89cff0;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 .header {
@@ -169,24 +170,25 @@ hr {
 .skillCard {
     border: solid #89cff0 1.5px;
     border-radius: 25%;
+    background-color: #485461;
     background-image: linear-gradient(315deg, rgba(255,255,255,.1) 0%, black 100%);
     color: white;
     padding: 1%;
-    position: absolute;
-    width: 25%;
-    height: calc(1vh + 10px);
+    margin: 1%;
+    width: calc(25% - 1% - 1%)!important;
+    font-size: calc(7.5px + 1vw);
 }
 
 .skillCardGroup {
     margin: 1em 0;
-    position: relative;
+    text-align: center;
 }
 
 .skillCardGroupHeader {
     font-size: calc(15px + 1vw);
     color: white;
     text-shadow: 0 0 0.75vw #89cff0;
-    margin-top: 1vh;
+    margin-top: 1em;
 }
 
 .skillsHr {
