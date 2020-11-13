@@ -8,11 +8,11 @@ const projects =
         live: "https://agile-beyond-76515.herokuapp.com/"
      },
      {
-         title: "Fit To Failure",
-         text: "A solo developed full-stack application that keeps track of the user's workouts throughout the week. The last workout started can be added onto and everything is displayed on the dashboard for easy viewing!",
-         src: "./images/fittofailure.png",
-         github: "https://github.com/timothymickiewicz/FitToFailure",
-         live: "https://fast-stream-10384.herokuapp.com/"
+         title: "Fitness",
+         text: "A solo developed full-stack application that keeps track of the user's workouts. The information entered is graphed out for each exercise and can be viewed to see progress or sticking points. A couple helpful tools have been built in as well, such as a barbell plate calculator and an estimation tool for how much weight the user should increase.",
+         src: "./images/fitness.png",
+         github: "https://github.com/timothymickiewicz/Fitness",
+         live: "https://cryptic-thicket-72551.herokuapp.com/"
      },
      {
          title: "Quick Notes",
@@ -47,8 +47,8 @@ const skills =
 [
     {id: "languages", skills: ["HTML5", "CSS3", "JavaScript", "Node", "MySQL", "MongoDB", "CoffeeScript"]},
     {id: "frameworks", skills: ["React", "Handlebars", "Ionic", "Express"]},
-    {id: "libraries", skills: ["Passport", "Bootstrap", "jQuery", "Sequelize", "Mongoose", "Moment", "Morgan"]},
-    {id: "extras", skills: ["Google API Libraries", "Geolocation", "User Authentication", "Bcrypt Encryption", "Dynamic Rendering", "Responsive Design", "Database Design"]}
+    {id: "libraries", skills: ["Passport", "Bootstrap", "jQuery", "Sequelize", "Mongoose", "Moment", "Morgan, Recharts"]},
+    {id: "extras", skills: ["Google API Libraries", "Geolocation", "User Authentication", "Bcrypt Encryption", "Dynamic Rendering", "Responsive Design", "Database Design", "Data Visualization"]}
 ]
 
 // Iterates each col size and adjusts accordingly
