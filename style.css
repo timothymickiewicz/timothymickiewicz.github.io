@@ -41,6 +41,10 @@ hr {
     height: auto;
 }
 
+#main {
+    position: relative;
+}
+
 #githubIcon {
     width: calc(25% + 30px);
     margin: 10.0%;
@@ -61,6 +65,12 @@ hr {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+}
+
+#resume {
+    color: white;
+    font-size: calc(15px + 2vw);
+    text-shadow: 0 0 0.75vw #89cff0;
 }
 
 .contentHeader {
