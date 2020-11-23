@@ -47,7 +47,7 @@ const skills =
 [
     {id: "languages", skills: ["HTML5", "CSS3", "JavaScript", "Node", "MySQL", "MongoDB", "CoffeeScript"]},
     {id: "frameworks", skills: ["React", "Handlebars", "Ionic", "Express"]},
-    {id: "libraries", skills: ["Passport", "Bootstrap", "jQuery", "Sequelize", "Mongoose", "Moment", "Morgan, Recharts"]},
+    {id: "libraries", skills: ["Passport", "Bootstrap", "jQuery", "Sequelize", "Mongoose", "Moment", "Morgan", "Recharts"]},
     {id: "extras", skills: ["Google API Libraries", "Geolocation", "User Authentication", "Bcrypt Encryption", "Dynamic Rendering", "Responsive Design", "Database Design", "Data Visualization"]}
 ]
 
